@@ -29,8 +29,11 @@ client.on('messageCreate', (message)=> {
     if (command === 'cute'){
         message.channel.send('you are super cute :3');
     }
-
+    const urlGif = 'https://media.tenor.com/_7Fjti7kTzsAAAAd/raccoon-cute.gif';
+    if (command === 'gif'){
+        message.channel.send(urlGif);
+    }
 })
 
 //The ultra secret token for authentication that we obtain from the Discord developer portal.
-client.login('MTAxNzI0MjY4MDE5NzEzMjI4OA.GIU3pd.rEmYdAJfDKhYDS2zIMeOgP_jSzui6vN5LfnZ4M');
+client.login("ultraSecretToken");
